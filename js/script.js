@@ -50,41 +50,27 @@ if(data){
     pokeimg.src = data['sprites']['front_default']
     pokebus.value = ''
     buscar= data.id
-        }else if(pokeimg.src = data['sprites']['front_default']==null){
+        }else{
     pokeimg.style.display='block'
     pokenome.innerHTML = data.name;
     pokenum.innerHTML = data.id;
     pokeup.innerHTML = data['types']['0']['type']['name']
     pokeimg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
     pokebus.value = ''
-    buscar= data.id}else if(pokeimg.src = data['sprites']['front_default']==null &&  data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']==null) {
-        pokeimg.style.display='block'
-        pokenome.innerHTML = data.name;
-        pokenum.innerHTML = data.id;
-        pokeup.innerHTML = data['types']['0']['type']['name']
-        pokeimg.src = data['sprites']['other']['official-artwork']['front_default']
-        pokebus.value = ''
-        buscar= data.id
-
-    }}else{   if ( pokeimg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']==null){
+    buscar= data.id}}else{   if ( pokeimg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']==null){
         pokeimg.style.display='block'
     pokenome.innerHTML = data.name;
     pokenum.innerHTML = data.id;
     pokeup.innerHTML = data['types']['0']['type']['name'] +', '+ data['types']['1']['type']['name']
     pokeimg.src = data['sprites']['front_default']
     pokebus.value = ''
-    buscar= data.id}else if(pokeimg.src = data['sprites']['front_default']==null){pokeimg.style.display='block'
+    buscar= data.id}else{pokeimg.style.display='block'
     pokenome.innerHTML = data.name;
     pokenum.innerHTML = data.id;
     pokeup.innerHTML = data['types']['0']['type']['name'] +', '+ data['types']['1']['type']['name']
     pokeimg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
     pokebus.value = ''
-    buscar= data.id}else{ pokenome.innerHTML = data.name;
-        pokenum.innerHTML = data.id;
-        pokeup.innerHTML = data['types']['0']['type']['name'] +', '+ data['types']['1']['type']['name']
-        pokeimg.src = data['sprites']['other']['official-artwork']['front_default']
-        pokebus.value = ''
-        buscar= data.id}
+    buscar= data.id}
 }
 
 
